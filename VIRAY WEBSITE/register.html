@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="register.css" />
+    <section class="navigator">
+      <nav>
+        <div class="navlogo">Wellmeadows Hospital</div>
+        <ul class="nav__links">
+          <li class="link"><a href="index.html">Home</a></li>
+          <li class="link"><a href="#">About Us</a></li>
+          <li class="link"><a href="#">Courses</a></li>
+          <li class="link"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </section>  
+  </head>
+
+<body>
+  <section class="container">
+    <header>Staff Form</header>
+    <form class="form" action="#">
+        <div class="input-box">
+            <label>First Name</label>
+            <input required="" placeholder="Enter first name" type="text">
+        </div>
+        <div class="input-box">
+          <label>Last Name</label>
+          <input required="" placeholder="Enter last name" type="text">
+      </div>
+        <div class="column">
+            <div class="input-box">
+              <label>Phone Number</label>
+              <input required="" placeholder="Enter phone number" type="telephone">
+            </div>
+            <div class="input-box">
+              <label>Birth Date</label>
+              <input required="" placeholder="Enter birth date" type="date">
+            </div>
+        </div>
+        <div class="gender-box">
+          <label>Gender</label>
+          <div class="gender-option">
+            <div class="gender">
+              <input checked="" name="gender" id="check-male" type="radio">
+              <label for="check-male">Male</label>
+            </div>
+            <div class="gender">
+              <input name="gender" id="check-female" type="radio">
+              <label for="check-female">Female</label>
+            </div>
+          </div>
+        </div>
+        <div class="input-box address">
+          <label>Address</label>
+          <input required="" placeholder="Enter street address" type="text">
+          <div class="column">
+            <div class="select-box">
+              <select>
+                <option hidden="">Municipality</option>
+                <option>Bacolod</option>
+                <option>Quezon</option>
+                <option>Misamis Occidental</option>
+                <option>Misamis Oriental</option>
+              </select>
+            </div>
+          <input required="" placeholder="Enter your city" type="text">
+          </div>
+        </div>
+        <button class="c-button c-button--gooey"> Submit
+          <div class="c-button__blobs">
+          <div></div>
+          <div></div>
+          <div></div>
+          </div>
+        </button>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: block; height: 0; width: 0;">
+          <defs>
+            <filter id="goo">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo"></feColorMatrix>
+              <feBlend in="SourceGraphic" in2="goo"></feBlend>
+            </filter>
+          </defs>
+        </svg>
+    </form>
+  </section>
+</body>
+  </html>
